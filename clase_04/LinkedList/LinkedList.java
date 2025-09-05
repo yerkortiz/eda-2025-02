@@ -62,6 +62,10 @@ class LinkedList {
     }
 
     public static void main(String[] Args) {
-        // LinkedList l = new LinkedList();
+        LinkedList l = new LinkedList();
+        l.insertFirst(5);
+        l.insertFirst(4);
+        l.insertFirst(3);
+        l.iterate();
     }
 }
