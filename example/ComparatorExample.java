@@ -48,13 +48,13 @@ public class ComparatorExample {
         cards.add(new Card(12, "diamonds"));
         Collections.sort(cards);
 
-        for (Card card : cards) {
-            System.out.println(card.getValue());
-        }
+        // for (Card card : cards) {
+        //     System.out.printf("%s %d\n", card.getType(), card.getValue());
+        // }
 
         Collections.sort(cards, new CardTypeComparator());
         for (Card card : cards) {
-            System.out.println(card.getType());
+            System.out.printf("%s %d\n", card.getType(), card.getValue());
         }
     }
 }
